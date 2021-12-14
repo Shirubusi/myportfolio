@@ -2,6 +2,7 @@
 <html lang="ja">
  <head>
  <meta charset="utf-8">
+ <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
  <title>マイポートフォリオ</title>
  <meta name="description" content="ディスクリプションを入力">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,26 +11,77 @@
  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
  <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
  <!-- [endif] -->
- <script src="main.js"></script>
  </head>
  <body>
  <!----- header----->
- <header>ヘッダー</header>
- <nav>ナビ</nav>
+ <!-- <header>ヘッダー</header>
+ <nav>ナビ</nav> -->
  <!----- /header ----->
  
  <!----- main ----->
- <article>
- <h1>タイトル</h1>
- <section>
- <h2>見出し２</h2>
- <p>コンテンツの内容</p>
- </section>
+ <article class="base">
+
+     <section id="navArea">
+        <nav>
+            <div class="inner">
+                <h2>My Portfolio</h2>
+                <ul>
+                    <li><a href="#">TOP</a></li>
+                    <li><a href="#">制作物</a></li>
+                    <li><a href="#">SNS</a></li>
+                  </ul>
+            </div>
+         </nav>
+
+
+        <div class="toggle_btn">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+
+
+          <div id="mask"></div>
+     </section>
+
+
+     <section class="main">
+        <div class="contents">
+            <div class="top">
+                <h1>識るビジ</h1>
+                <p>～識るでビジネスをする～</p>
+            </div>
+            <div class="about">
+                <p>Webデザイン制作・Webアプリ制作をしています。</p>
+                <p>お仕事のご依頼はTwitterにてDMください。</p>
+            </div>
+            <div class="making">
+                <h1>制作物</h1>
+                <p>Webアプリ</p>
+                <a href="https://get-live-chat.web.app/signin">しらべる</a>
+            </div>
+            <div class="sns">
+                <h1>SNS</h1>
+                <p>twitter : <a href="https://twitter.com/shirubusi">@shirubusi</a></p>
+            </div>
+         </div>
+
+         <div class="side-bar">
+            <h2>My Portfolio</h2>
+            <ul>
+                <li><a href="#">TOP</a></li>
+                <li><a href="#">制作物</a></li>
+                <li><a href="#">SNS</a></li>
+              </ul>
+         </div>
+     </section>
+
  </article>
  <!----- /main ----->
  
  <!----- footer ----->
- <footer>フッター</footer>
+ <!-- <footer>フッター</footer> -->
  <!----- /footer ----->
+ <script src="main.js"></script>
  </body>
 </html>
